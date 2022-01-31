@@ -12,6 +12,7 @@ export class MongoConnection {
 		} catch (err) {
 			//Caso haja falha na conexão
 			console.error(err.message)
+			console.log("Consider editing the DB connection string avaiable in /src/config/Constants.ts");
 			process.exit(1)
 		}
 	};
